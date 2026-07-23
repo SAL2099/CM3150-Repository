@@ -23982,12 +23982,12 @@ GameObject:
   - component: {fileID: 2059115309}
   - component: {fileID: 2059115308}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: ArrayLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2059115308
 MonoBehaviour:
   m_ObjectHideFlags: 0
