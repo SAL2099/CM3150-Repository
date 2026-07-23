@@ -7,7 +7,6 @@ public class DoorScript : MonoBehaviour
 
     public void OpenDoor()
     {
-        doorAnimator = gameObject.GetComponent<Animator>();
         if (doorOpen == false)
         {
             doorAnimator.Play("DoorOpen");
@@ -18,7 +17,6 @@ public class DoorScript : MonoBehaviour
 
     public void CloseDoor()
     {
-        doorAnimator = gameObject.GetComponent<Animator>();
         if (doorOpen == true)
         {
             doorAnimator.Play("DoorClose");
