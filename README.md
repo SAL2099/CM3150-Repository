@@ -18,3 +18,5 @@ Real Stars Skybox Lite - https://assetstore.unity.com/packages/3d/environments/s
 Retro PSX Horror Puzzle Item Pack (Icon+LowPoly) - https://assetstore.unity.com/packages/3d/props/retro-psx-horror-puzzle-item-pack-icon-lowpoly-250188
 
 Sci-Fi Planetary Outpost: Ultimate Modular Construction Kit, low-poly stylized - https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-planetary-outpost-ultimate-modular-construction-kit-low-p-352114
+
+I also used the Xr Interaction Toolkit Examples - https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples
