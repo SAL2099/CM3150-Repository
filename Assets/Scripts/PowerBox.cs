@@ -7,7 +7,7 @@ public class PowerBox : MonoBehaviour
     public GameObject emergencyLighting;
     public GameObject staticPowerCell;
 
-    public void OnTriggerEnter(Collision entity)
+    public void OnTriggerEnter(Collider entity)
     {
         if(entity.gameObject.tag == "PowerCell")
         {
