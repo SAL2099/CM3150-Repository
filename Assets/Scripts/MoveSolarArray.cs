@@ -7,16 +7,20 @@ public class MoveSolarArray : MonoBehaviour
     public bool leverActivated;
     public Transform moveThisThanks;
     public Transform boundary;
+    public AudioSource audioSource;
+    public AudioClip soundEffect;
 
     // These are pretty self evident, turn the lever on or off
     public void TurnOnLever()
     {
         leverActivated = true;
+        audioSource.PlayOneShot(soundEffect);
     }
 
     public void TurnOffLever()
     {
         leverActivated = false;
+        audioSource.PlayOneShot(soundEffect);
     }
 
     void FixedUpdate()

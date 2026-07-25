@@ -6,6 +6,9 @@ public class PowerBox : MonoBehaviour
     public GameObject regularLighting;
     public GameObject emergencyLighting;
     public GameObject staticPowerCell;
+    public AudioSource audioSource;
+    public AudioClip soundEffect;
+    public GameObject endCanvas;
 
     public void OnTriggerEnter(Collider entity)
     {
@@ -14,8 +17,10 @@ public class PowerBox : MonoBehaviour
             Destroy(entity.gameObject);
             staticPowerCell.SetActive(true);
             fullPower = true;
+            audioSource.PlayOneShot(soundEffect);
             emergencyLighting.SetActive(false);
             regularLighting.SetActive(true);
+            endCanvas.SetActive(true);
         }
     }
 }

@@ -6,6 +6,10 @@ public class EmergencyPowerButton : MonoBehaviour
     public bool emergencyPowerRestored;
     public SolarPanelAlign spa;
     public GameObject emergencyLighting;
+    public AudioSource emergencyEffect;
+    public AudioSource emergencyMessage;
+    public AudioClip powerEffect;
+    public AudioClip messageEffect;
 
     public void RestoreEmergencyPower()
     {
@@ -13,6 +17,8 @@ public class EmergencyPowerButton : MonoBehaviour
 
         if (arrayAligned == true)
         {
+            emergencyEffect.PlayOneShot(powerEffect);
+            emergencyMessage.PlayOneShot(messageEffect);
             emergencyPowerRestored = true;
             emergencyLighting.SetActive(true);
 
