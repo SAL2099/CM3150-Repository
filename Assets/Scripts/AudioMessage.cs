@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class AudioMessage : MonoBehaviour
 {
-    public bool hasPlayed;
-    public AudioSource audioSource;
-    public AudioClip soundEffect;
+    [SerializeField] private bool hasPlayed;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip soundEffect;
 
     public void OnTriggerEnter()
     {

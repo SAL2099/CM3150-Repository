@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class StorageDoorScript : MonoBehaviour
 {
-    public Animator doorAnimator;
+    [SerializeField] private Animator doorAnimator;
     public EmergencyPowerButton epb;
     public bool powered;
     private bool doorOpen = false;
-    public AudioSource audioSource;
-    public AudioClip soundEffect;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip soundEffect;
 
     public void OpenStoragelDoor()
     {
@@ -16,9 +16,9 @@ public class StorageDoorScript : MonoBehaviour
 
         if (doorOpen == false && powered == true)
         {
-            audioSource.PlayOneShot(soundEffect);
             doorAnimator.Play("StorageDoorOpen");
             doorOpen = true;
+            audioSource.PlayOneShot(soundEffect);
         }
 
     }
@@ -29,9 +29,9 @@ public class StorageDoorScript : MonoBehaviour
 
         if (doorOpen == true && powered == true)
         {
-            audioSource.PlayOneShot(soundEffect);
             doorAnimator.Play("StorageDoorClose");
             doorOpen = false;
+            audioSource.PlayOneShot(soundEffect);
         }
     }
 }

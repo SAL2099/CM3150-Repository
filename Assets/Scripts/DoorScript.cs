@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-    public Animator doorAnimator;
+    [SerializeField] private Animator doorAnimator;
     private bool doorOpen = false;
-    public AudioSource audioSource;
-    public AudioClip soundEffect;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip soundEffect;
 
     public void OpenDoor()
     {

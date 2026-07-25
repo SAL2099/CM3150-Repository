@@ -3,12 +3,12 @@ using UnityEngine;
 public class MoveSolarArrayCloser : MonoBehaviour
 {
     // Set the variables, move this is the array and the boundary is as far as its allowed to go to
-    public float speed;
-    public bool leverActivated;
-    public Transform moveThisThanks;
-    public Transform boundary;
-    public AudioSource audioSource;
-    public AudioClip soundEffect;
+    [SerializeField] private float speed;
+    [SerializeField] private bool leverActivated;
+    [SerializeField] private Transform moveThisThanks;
+    [SerializeField] private Transform boundary;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip soundEffect;
 
 
     // These are pretty self evident, turn the lever on or off

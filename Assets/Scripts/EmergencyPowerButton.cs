@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class EmergencyPowerButton : MonoBehaviour
 {
-    public bool arrayAligned;
+    [SerializeField] private bool arrayAligned;
     public bool emergencyPowerRestored;
-    public SolarPanelAlign spa;
-    public GameObject emergencyLighting;
-    public AudioSource emergencyEffect;
-    public AudioSource emergencyMessage;
-    public AudioClip powerEffect;
-    public AudioClip messageEffect;
+    [SerializeField] private SolarPanelAlign spa;
+    [SerializeField] private GameObject emergencyLighting;
+    [SerializeField] private AudioSource emergencyEffect;
+    [SerializeField] private AudioSource emergencyMessage;
+    [SerializeField] private AudioClip powerEffect;
+    [SerializeField] private AudioClip messageEffect;
 
     public void RestoreEmergencyPower()
     {

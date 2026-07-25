@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class TorchToggle : MonoBehaviour
 {
-    public GameObject torch;
-    public AudioSource audioSource;
-    public AudioClip soundEffect;
+    [SerializeField] private GameObject torch;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip soundEffect;
 
   public void TorchOn()
     {

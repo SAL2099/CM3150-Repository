@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class GeneratorDoorScript : MonoBehaviour
 {
-    public Animator doorAnimator;
+    [SerializeField] private Animator doorAnimator;
     public Keycard key;
     public bool keyAllowed;
     private bool doorOpen = false;
-    public AudioSource doorSource;
-    public AudioSource terminalSource;
-    public AudioSource messageSource;
-    public AudioClip acceptedEffect;
-    public AudioClip doorEffect;
-    public AudioClip messageEffect;
+    [SerializeField] private AudioSource doorSource;
+    [SerializeField] private AudioSource terminalSource;
+    [SerializeField] private AudioSource messageSource;
+    [SerializeField] private AudioClip acceptedEffect;
+    [SerializeField] private AudioClip doorEffect;
+    [SerializeField] private AudioClip messageEffect;
 
     public void OnTriggerEnter(Collider entity)
     {

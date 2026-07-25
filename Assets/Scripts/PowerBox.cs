@@ -3,12 +3,13 @@ using UnityEngine;
 public class PowerBox : MonoBehaviour
 {
     public bool fullPower;
-    public GameObject regularLighting;
-    public GameObject emergencyLighting;
-    public GameObject staticPowerCell;
-    public AudioSource audioSource;
-    public AudioClip soundEffect;
-    public GameObject endCanvas;
+    [SerializeField] private GameObject regularLighting;
+    [SerializeField] private GameObject emergencyLighting;
+    [SerializeField] private GameObject staticPowerCell;
+    [SerializeField] private AudioSource messageSource;
+    [SerializeField] private AudioClip messageEffect;
+    [SerializeField] private AudioSource powerSource;
+    [SerializeField] private AudioClip powerEffect;
 
     public void OnTriggerEnter(Collider entity)
     {
@@ -17,10 +18,10 @@ public class PowerBox : MonoBehaviour
             Destroy(entity.gameObject);
             staticPowerCell.SetActive(true);
             fullPower = true;
-            audioSource.PlayOneShot(soundEffect);
+            messageSource.PlayOneShot(messageEffect);
+            powerSource.PlayOneShot(powerEffect);
             emergencyLighting.SetActive(false);
             regularLighting.SetActive(true);
-            endCanvas.SetActive(true);
         }
     }
 }
