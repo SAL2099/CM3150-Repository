@@ -20,3 +20,5 @@ Retro PSX Horror Puzzle Item Pack (Icon+LowPoly) - https://assetstore.unity.com/
 Sci-Fi Planetary Outpost: Ultimate Modular Construction Kit, low-poly stylized - https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-planetary-outpost-ultimate-modular-construction-kit-low-p-352114
 
 I also used the Xr Interaction Toolkit Examples - https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples
+
+Figma link for research and design - https://www.figma.com/design/zzOA8IutTvVqUAlLv2Jxkz/CM3150-Resit?node-id=29-67&t=7a1iK81JDFcEufP9-1
