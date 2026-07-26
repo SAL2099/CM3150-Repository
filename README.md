@@ -21,4 +21,6 @@ Sci-Fi Planetary Outpost: Ultimate Modular Construction Kit, low-poly stylized -
 
 I also used the Xr Interaction Toolkit Examples - https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples
 
+All sound effect sourced from Pixabay and eddited with Audacity - https://pixabay.com/sound-effects/
+
 Figma link for research and design - https://www.figma.com/design/zzOA8IutTvVqUAlLv2Jxkz/CM3150-Resit?node-id=29-67&t=7a1iK81JDFcEufP9-1
